@@ -18,13 +18,9 @@ const ImgCard = ({ d }) => {
       >
         <div className="img">
           {d.flip ? (
-            <LazyLoad>
               <img src={d.img} alt="" />
-            </LazyLoad>
           ) : (
-            <LazyLoad height="100%">
               <img src="https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg" />
-            </LazyLoad>
           )}
         </div>
       </Col>
