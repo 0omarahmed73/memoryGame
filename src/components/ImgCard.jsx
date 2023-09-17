@@ -6,7 +6,7 @@ const ImgCard = ({ d }) => {
   const { handleFlip } = useContext(ImgsContext);
   return (
     <>
-      <Col className="m-2" sm='12' md='3' lg='2' onClick={() => handleFlip(d.id)} key={crypto.randomUUID()}>
+      <Col className="m-2" xs='5' sm='4' md='3' lg='2' onClick={() => handleFlip(d.id)} key={crypto.randomUUID()}>
         <div className="img">
           {d.flip ? (
             <img src={d.img} alt="" />
