@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.memorygame {
+  background-color: #1B1B1D;
+
+  .container-fluid {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .img {
+      overflow: hidden;
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 8px 8px black;
+      transition: 1s;
+
+      & img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+
+    }
+
+  }
+}
+
+.row {
+  justify-content: center;
+}
+
+.won {
+  font-size: 30px;
+}
