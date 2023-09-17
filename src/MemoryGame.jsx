@@ -14,8 +14,8 @@ const MemoryGame = () => {
                 return <ImgCard key={crypto.randomUUID()} d={d} />;
               })
             : <div className="d-flex flex-column justify-content-center align-items-center">
-            <p className="won text-white">Congratulations You Won !🎉🎉</p>
-            <Button onClick={handleAgain} className="w-25" variant="danger">Try Again ?</Button>
+            <p className="won text-white text-center">Congratulations You Won !🎉🎉</p>
+            <Button onClick={handleAgain} className="w-50" variant="danger">Try Again ?</Button>
             </div>}
         </Row>
       </Container>
